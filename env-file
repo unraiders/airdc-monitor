@@ -1,0 +1,12 @@
+# Script in debug mode: 0 = no, 1 = yes 
+DEBUG_MODE=0
+
+# AirDC++ Configuration
+AIRDC_IP=
+AIRDC_PORT=
+AIRDC_USER=
+AIRDC_PASSWORD=
+
+# Telegram Configuration
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=
