@@ -1,0 +1,19 @@
+services:
+  airdc-monitor:
+    build: .
+    container_name: airdc-monitor
+    environment:
+      - DEBUG_MODE=0              # 1 para activar el modo debug, 0 para desactivarlo
+      - AIRDC_IP=                 # Dirección IP de AirDC++
+      - AIRDC_PORT=               # Puerto de AirDC++
+      - AIRDC_USER=               # Usuario de AirDC++
+      - AIRDC_PASSWORD=           # Contraseña de AirDC++
+      - TELEGRAM_BOT_TOKEN=       # Token del bot de Telegram
+      - TELEGRAM_CHAT_ID=         # ID del chat de Telegram
+    restart: unless-stopped
+    networks:
+      - airdc-net
+
+networks:
+  airdc-net:
+    driver: bridge
