@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>airdc-monitor</Name>
+  <Repository>unraiders/airdc-monitor</Repository>
+  <Registry>https://hub.docker.com/r/unraiders/airdc-monitor/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/unraiders/airdc-monitor</Support>
+  <Overview>Monitor de subidas de AirDC++ con notificaciones por Telegram</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/unraiders/airdc-monitor/master/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683840000</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Config Name="DEBUG_MODE" Target="DEBUG_MODE" Default="0" Mode="" Description="Modo debug (0: básico, 1: detallado)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="AIRDC_IP" Target="AIRDC_IP" Default="" Mode="" Description="IP del servidor AirDC++" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="AIRDC_PORT" Target="AIRDC_PORT" Default="" Mode="" Description="Puerto del servidor AirDC++" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="AIRDC_USER" Target="AIRDC_USER" Default="" Mode="" Description="Usuario de AirDC++" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="AIRDC_PASSWORD" Target="AIRDC_PASSWORD" Default="" Mode="" Description="Contraseña de AirDC++" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="TELEGRAM_BOT_TOKEN" Target="TELEGRAM_BOT_TOKEN" Default="" Mode="" Description="Token del bot de Telegram" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="TELEGRAM_CHAT_ID" Target="TELEGRAM_CHAT_ID" Default="" Mode="" Description="ID del chat de Telegram" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
