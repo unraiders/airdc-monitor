@@ -1,6 +1,6 @@
 services:
   airdc-monitor:
-    build: .
+    image: unraiders/airdc-monitor
     container_name: airdc-monitor
     environment:
       - DEBUG_MODE=0              # 1 para activar el modo debug, 0 para desactivarlo
